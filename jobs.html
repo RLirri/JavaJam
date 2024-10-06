@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaJam Coffee Job</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JavaJam Coffee House</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 id="marginAndPaddingSetter">Jobs at JavaJam</h2>
+
+      <p>
+        Want to work at JavaJam? Please fill out the form below to start your
+        application.
+        <br />Required fields are marked with an asterik(*).
+      </p>
+
+      <form method="post" action="http://webdevbasics.net/scripts/javajam8.php">
+        <label for="name"> * Name:</label>
+        <input type="text" name="myName" id="name" required />
+        <label for="E-Mail"> * E-mail:</label
+        ><input type="email" name="myE-mail" id="E-Mail" required />
+        <label for="Experience"> * Experience:</label
+        ><textarea
+          id="Experience"
+          name="myExperience"
+          cols="21"
+          rows="2"
+          required
+        ></textarea>
+        <p>
+          Select job position
+          <select>
+            <option value="null"></option>
+            <option value="Barista">Barista</option>
+            <option value="Waiter">Waiter</option>
+            <option value="Musician">Musician</option>
+            <option value="Manager">Manager</option>
+          </select>
+        </p>
+
+        <p>preferred Interview Data and Time <input type="datetime-local" /></p>
+
+        <p>
+          Upload your photo
+          <input type="file" />
+          <br />
+          <input id="marginSubmitButton" type="submit" value="Apply Now" />
+        </p>
+      </form>
+    </main>
+    <footer>
+      <p>
+        Copyright &copy; 2024 JavaJam Coffee House
+        <br />
+        <a href="email_fake.html">Ruixin@Huang.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
